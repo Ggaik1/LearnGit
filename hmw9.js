@@ -13,16 +13,3 @@ async function globalFunc(finishUrl){
 globalFunc("cats?name=abyssinian").then((result) => {
     console.log(result);
 });
-
-
-
-
-async function remeberLesson(finishUrl){
-    const yesIremember = await fetch("https://api.api-ninjas.com/v1/" + finishUrl,
-    {headers:{'X-Api-Key': 'n2kREa3o9YwFZ/vSbZl3ug==d6iO5vkzjKNjMi5o'}});
-    return yesIremember.json();
-};
-
-remeberLesson("country?name=Armenia").then((reuslt) => {
-    console.log(result);
-});
